@@ -16,9 +16,7 @@ def first_challenge
   nested_array = contacts["Freddy Mercury"][:favorite_icecream_flavors]
   
   nested_array.each do |item| 
-    if item == "strawberry"
-      item.delete
-    end
+    nested_array.delete_if {|item| x == 3 } 
     end
 
   #remember to return your newly altered contacts hash!
