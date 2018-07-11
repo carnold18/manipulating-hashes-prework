@@ -13,7 +13,7 @@ def first_challenge
     }
   }
 
-  contacts.delete_if{
+  contacts.delete_if{|key,value| 
 
   #remember to return your newly altered contacts hash!
   contacts
