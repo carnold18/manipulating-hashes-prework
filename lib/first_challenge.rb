@@ -13,7 +13,7 @@ def first_challenge
     }
   }
 
-  contacts.delete_if{|key,value| 
+  contacts["Freddy Mercuty"].delete_if{|key,value| key == :favorite_icecream_flavors && value == "strawberry"
 
   #remember to return your newly altered contacts hash!
   contacts
