@@ -13,7 +13,11 @@ def first_challenge
     }
   }
 
-  contacts["Freddy Mercury"].delete_if{|name,value| name == :favorite_icecream_flavors && value == "strawberry"}
+  nested_array = contacts["Freddy Mercury"][:favorite_icecream_flavors]
+  
+  nested_array.each do |item| 
+    item.delete_if == "strawberry"
+  end
 
   #remember to return your newly altered contacts hash!
   contacts
