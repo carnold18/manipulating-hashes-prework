@@ -13,7 +13,7 @@ def first_challenge
     }
   }
 
-  contacts["Freddy Mercuty"].delete_if{|key,value| key == :favorite_icecream_flavors && value == "strawberry"
+  contacts["Freddy Mercuty"][:favorite_icecream_flavors].delete_if{|item| item.each do item == "strawberry"}
 
   #remember to return your newly altered contacts hash!
   contacts
