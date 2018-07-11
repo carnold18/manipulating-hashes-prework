@@ -19,7 +19,6 @@ def first_challenge
     nested_array.delete_if {|item| item == "strawberry" } 
     end
 
-  #remember to return your newly altered contacts hash!
   contacts
 end
 
