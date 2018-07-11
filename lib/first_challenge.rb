@@ -13,12 +13,7 @@ def first_challenge
     }
   }
 
-  contacts["Freddy Mercury"][:favorite_icecream_flavors].each do |item|
-    
-    end
-  end
-
-contacts
+  contacts.delete_if{
 
   #remember to return your newly altered contacts hash!
   contacts
